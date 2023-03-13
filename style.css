@@ -92,7 +92,7 @@ form {
   margin: 1rem 0;
 }
 
-.input {
+/* .input {
   width: 100%;
   outline: none;
   border: 2px solid #fafafa;
@@ -104,16 +104,16 @@ form {
   letter-spacing: 0.5px;
   border-radius: 25px;
   transition: 0.3s;
-}
+} */
 
-textarea.input {
+/* textarea.input {
   padding: 0.8rem 1.2rem;
   min-height: 150px;
   border-radius: 22px;
   resize: none;
   overflow-y: auto;
-}
-
+} */
+/* 
 .input-container label {
   position: absolute;
   top: 50%;
@@ -126,12 +126,12 @@ textarea.input {
   pointer-events: none;
   z-index: 1000;
   transition: 0.5s;
-}
+} */
 
-.input-container.textarea label {
+/* .input-container.textarea label {
   top: 1rem;
   transform: translateY(0);
-}
+} */
 
 .btn {
   padding: 0.6rem 1.3rem;
@@ -162,7 +162,7 @@ textarea.input {
   color: transparent;
   pointer-events: none;
   z-index: 500;
-}
+} 
 
 .input-container span:before,
 .input-container span:after {
@@ -296,6 +296,37 @@ textarea.input {
   transform: translate(181%, 11%);
   opacity: 0.2;
 }
+
+.form_input{
+    width: 100%;
+    font-family: inherit;
+    font-size: 1rem;
+    
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #149279;
+}
+
+.form_label{
+    color: #149279;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+}
+
+.form_input:focus + .form_label,
+.form_input:not(:placeholder-shown) + .form_label
+{
+    transform: translateY(-15px) scale(.7);
+    transform-origin: top left;
+    color: #3866f2;
+}
+
+
 
 @media (max-width: 850px) {
   .form {
