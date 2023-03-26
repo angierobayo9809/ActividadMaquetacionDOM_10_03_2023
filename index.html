@@ -8,7 +8,7 @@
         </title>
         <link rel="stylesheet" href="style.css">
         <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
-        <script src="app.js"></script>
+        <script src="app.js" defer></script>
     </head>
     <body>
         <div class="container">
@@ -16,41 +16,38 @@
             <img src="img/shape.png" class="square" alt="" />
             <div class="form">
               <div class="contact-info">
-                <h3 class="title">Pongámonos en contacto</h3>
-                <p class="text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-                  dolorum adipisci recusandae praesentium dicta!
-                </p>
+                <h3 class="title" id="title"></h3>
+                <p class="text"></p>
       
                 <div class="info">
                   <div class="information">
-                    <img src="img/location.png" class="icon" alt="" />
-                    <p>Cll 12 # 15 -15</p>
+                    <img class="icon" alt="" />
+                    <p id="direccion"></p>
                   </div>
                   <div class="information">
-                    <img src="img/email.png" class="icon" alt="" />
-                    <p>correo@email.com</p>
+                    <img class="icon" alt="" />
+                    <p id="email"></p>
                   </div>
                   <div class="information">
-                    <img src="img/phone.png" class="icon" alt="" />
-                    <p>123-456-789</p>
+                    <img class="icon" alt="" />
+                    <p id="telefono"></p>
                   </div>
                 </div>
       
                 <div class="social-media">
-                  <p>Conecta con nosotros :</p>
+                  <p id="social"></p>
                   <div class="social-icons">
                     <a href="#">
-                      <i class="fab fa-facebook-f"></i>
+                      <i class="fab"></i>
                     </a>
                     <a href="#">
-                      <i class="fab fa-twitter"></i>
+                      <i class="fab"></i>
                     </a>
                     <a href="#">
-                      <i class="fab fa-instagram"></i>
+                      <i class="fab"></i>
                     </a>
                     <a href="#">
-                      <i class="fab fa-linkedin-in"></i>
+                      <i class="fab"></i>
                     </a>
                   </div>
                 </div>
@@ -61,25 +58,25 @@
                 <span class="circle two"></span>
       
                 <form action="index.html" autocomplete="off">
-                  <h3 class="title">Contáctanos</h3>
+                  <h3 class="title" id="contactanos"></h3>
                   <div class="input-container">
                     <input type="text" name="name" class="form_input" placeholder=" " />
-                    <label for="" class="form_label">Usuario</label>
+                    <label class="form_label"></label>
                     <!-- <span>Usuario</span> -->
                   </div>
                   <div class="input-container">
                     <input type="email" name="email" class="form_input" placeholder=" "/>
-                    <label for=""class="form_label">Email</label>
+                    <label for=""class="form_label"></label>
                     <!-- <span>Email</span> -->
                   </div>
                   <div class="input-container">
                     <input type="tel" name="phone" class="form_input" placeholder=" "/>
-                    <label for="" class="form_label">Telefono</label>
+                    <label class="form_label"></label>
                     <!-- <span>Telefono</span> -->
                   </div>
                   <div class="input-container textarea">
                     <textarea name="message" class="form_input" placeholder=" "></textarea>
-                    <label for="" class="form_label">Mensaje</label>
+                    <label class="form_label"></label>
                     <!-- <span>Mensaje</span> -->
                   </div>
                   <input type="submit" value="Enviar" class="btn" />
